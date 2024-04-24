@@ -1,346 +1,327 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Photography</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	
-	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
-	
-	<!-- Stylesheets -->
-	<link href="common-css/bootstrap.css" rel="stylesheet">
-	
-	<link href="common-css/ionicons.css" rel="stylesheet">
-	
-	<!-- REVOLUTION STYLE SHEETS -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-		
-	<!-- REVOLUTION JS FILES -->
-	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-		
-	<link href="01_Photography/css/styles.css" rel="stylesheet">
-	
-	<link href="01_Photography/css/responsive.css" rel="stylesheet">
-	
+    <meta charset="utf-8">
+    <title>FreeFolio - Freelancer Portfolio Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-	
-	<header>
-		<a class="logo" href="#"><img src="images/logo-white.png" alt="Logo"></a>
-		
-		<a class="right-area" href="mailto:contact@colorlib.com">CONTACT@COLORLIB.COM</a>
-		
-		<a class="menu-nav-icon" data-menu="#main-menu"><i class="ion-navicon"></i></a>
-		
-		<ul class="main-menu" id="main-menu">
-			<li><a href="index.html">Home</a></li>
-			<li class="drop-down"><a href="#!">Portfolio<i class="ion-arrow-down-b"></i></a>
-				<ul class="drop-down-menu drop-down-inner">
-					<li><a href="02_Portfolio.html">Portfolio 1</a></li>
-					<li><a href="03_Portfolio.html">Portfolio 2</a></li>
-				</ul>
-			</li>
-			<li class="drop-down"><a href="#!">Blog<i class="ion-arrow-down-b"></i></a>
-				<ul class="drop-down-menu drop-down-inner">
-					<li><a href="04_Blog.html">Blog Page</a></li>
-					<li><a href="05_Blog_Single.html">Blog Detail</a></li>
-				</ul>
-			</li>
-			<li><a href="06_Regular_Page.html">Regular page</a></li>
-		</ul>
-	</header>
-	
-	<section class="slider-section">
-	
-		<div id="rev_slider_28_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="parallax-zoom-slices" data-source="gallery" style="background:#000000;padding:0px;">
-		<!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
-			<div id="rev_slider_28_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-			<ul>	
-				<!-- SLIDE 1 -->
-				<li data-index="rs-82" data-transition="fade" data-slotamount="default" 
-					data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut"
-					data-easeout="Power4.easeOut" data-masterspeed="1000" data-rotate="0"  
-					data-saveperformance="off"  data-title="Slide" 
-					data-slicey_shadow="0px 0px 50px 0px transparent">
-					<!-- MAIN IMAGE -->
-					<img src="images/slider-1-1920x1080.jpg"  alt=""  data-bgposition="center center" 
-						data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" 
-						data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" 
-						data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" 
-						class="rev-slidebg" data-no-retina>
-						
-					<!-- LAYERS -->
 
-					<!-- LAYER NR. 1 -->
-					<div class="tp-caption tp-resizeme" 
-						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
-						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
-						data-width="none" data-height="none" data-whitespace="nowrap"
-			 
-						data-type="text" data-responsive_offset="on" 
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Port</span>folio</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#skill" class="nav-item nav-link">Skill</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
-						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
-						color: rgba(255,255,255,100); ">Red kayaks</div>
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
 
-					<!-- LAYER NR. 2 -->
-					<div class="tp-caption tp-resizeme visit-btn" 
-						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
-						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
-						data-width="['none','none','480','360']" data-height="none"
-						data-whitespace="['nowrap','nowrap','normal','normal']"
-			 
-						data-type="text" data-responsive_offset="on" 
 
-						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
-						{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
-						data-textAlign="['inherit','inherit','center','center']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-8 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Matthew Wood</h1>
+                <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                <div class="typed-text d-none">Game Developer</div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
 
-						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
-						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
-						letter-spacing: 5px; font-weight: 600; min-width: auto;">VIEW PROJECTS </div>
-				
-				</li>
-				
-				<!-- SLIDE 2 -->
-				<li data-index="rs-83" data-transition="fade" data-slotamount="default" data-hideafterloop="0" 
-					data-hideslideonmobile="off"  
-					data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  
-					data-rotate="0"  data-saveperformance="off"  
-					data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" 
-					data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" 
-					data-slicey_shadow="0px 0px 50px 0px transparent">
-					
-					<!-- MAIN IMAGE -->
-					<img src="images/slider-4-1920x1080.jpg"  alt=""  data-bgposition="center center" data-kenburns="on"
-						data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" 
-						data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-						data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
-						data-no-retina>
-					
-					<!-- LAYERS -->
 
-					<!-- LAYER NR. 1 -->
-					<div class="tp-caption tp-resizeme"  
-						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
-						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
-						data-width="none" data-height="none" data-whitespace="nowrap"
-			 
-						data-type="text" data-responsive_offset="on" 
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Game Developer</h3>
+                    <p>I am a graduate from Ateneo De Naga University with a bachelor's degree in computer science, and with this degree, I hope to better improve my skills in the field of game development. I have dreamed, ever since my childhood, to make video games, and I have honed that skill in order to acheive my dream. I do, however, understand that my skills are only at a beginners level and hope to improve them through working with your company.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Matthew Wood</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">December 8, 2000</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Bachelor's in Computer Science</span></h6></div>
 
-						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        <div class="col-sm-6 py-2"><h6>Phone: <span class="text-secondary">0917-506-4305</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">matthew.ethan.wood@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">B2 L11 Monte Cielo Del Rosario Naga City</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
-						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
-						color: rgba(255,255,255,100); ">Red kayaks</div>
 
-					<!-- LAYER NR. 2 -->
-					<div class="tp-caption tp-resizeme visit-btn" 
-						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
-						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
-						data-width="['none','none','480','360']" data-height="none"
-						data-whitespace="['nowrap','nowrap','normal','normal']"
-			 
-						data-type="text" data-responsive_offset="on" 
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Science  in Computer Science</h5>
+                            <p class="mb-2"><strong>Ateneo De Naga University</strong> | <small>August 2018 - June 2024</small></p>
+                            <p>I have learned many different languages over my time in the university, ranging from C++, ruby, Java, Javascript, and C#. I, unfortunately, can't say that I remember all of them, except for C#, but this should help prove that I am capable of learning a new language over a short amount time. I was also the project leader for my thesis which required me to be the sole programmer for the two identical games, with different mechanics.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p class="mb-2"><strong>Ateneo De Naga University - Senior High School</strong> | <small>2016 - 2018</small></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p class="mb-2"><strong>Ateneo De Naga University - Junior High School</strong> | <small>2012 - 2016</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Expericence</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Pump Attendant</h5>
+                            <p class="mb-2"><strong>Geronimo Petron Service Center</strong> | <small>2015 - Present</small></p>
+                            <p>My parents own a gas station, which led to my needing to help them with running the station by working as a pump attendant. This experience has helped me to learn customer interaction and how to handle difficult customers, as well as teamwork in the form of having my fellow colleagues attend to other customers while I handle the ones that they have finished fueling for.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Game Developer/Project Head</h5>
+                            <p class="mb-2"><strong>Thesis</strong> | <small>2023 - 2024</small></p>
+                            <p>I was the project leader for my thesis. This had me learn how to manage people themselves. I had to identify whay my groupmates were capable of while not giving them any tasks that they can't handle. This led to me finding out that I was the only one capable of programming the actual games that was need for our study. The games themselves were identical in gameplay, but they had one key difference; that being adaptive difficulty algorithm that they both used.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
 
-						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
-							{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
-						data-textAlign="['inherit','inherit','center','center']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
-						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
-						letter-spacing: 5px; font-weight: 600; min-width: auto;">VIEW PROJECTS </div>
-				
-				</li>
-				
-				<!-- SLIDE 3 -->
-				<li data-index="rs-84" data-transition="fade" data-slotamount="default" 
-					data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeOut"
-					data-easeout="Power4.easeOut" data-masterspeed="1000" data-rotate="0"  
-					data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" 
-					data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" 
-					data-param8="" data-param9="" data-param10="" data-description="" 
-					data-slicey_shadow="0px 0px 50px 0px transparent">
-					<!-- MAIN IMAGE -->
-					<img src="images/slider-2-1920x1080.jpg"  alt=""  data-bgposition="center center" 
-						data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" 
-						data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" 
-						data-blurstart="0" data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" 
-						class="rev-slidebg" data-no-retina>
-					<!-- LAYERS -->
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">70%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                            <h6 class="font-weight-bold">50%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C#</h6>
+                            <h6 class="font-weight-bold">90%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Swift</h6>
+                            <h6 class="font-weight-bold">50%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skill End -->
 
-					<!-- LAYER NR. 1 -->
-					<div class="tp-caption tp-resizeme" 
-						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
-						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
-						data-width="none" data-height="none" data-whitespace="nowrap"
-			 
-						data-type="text" data-responsive_offset="on" 
 
-						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+    
 
-						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
-						color: rgba(255,255,255,100); ">Red kayaks</div>
 
-					<!-- LAYER NR. 2 -->
-					<div class="tp-caption tp-resizeme visit-btn" 
-						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
-						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
-						data-width="['none','none','480','360']" data-height="none"
-						data-whitespace="['nowrap','nowrap','normal','normal']"
-			 
-						data-type="text" data-responsive_offset="on" 
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container align-items-center">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1"  data-filter=".first">Tower Defensee</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Quiz Game</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="portfolio-container">
+                <div class="col-lg-4 portfolio-item first">
+                    <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
+                    <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                        <a href="">
+                            <i class="" style="font-size: 60px;"><p>N/A</p></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 portfolio-item second">
+                    <div class="">
+                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="img/Quiz Gameplay.mp4" data-lightbox="portfolio">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-						{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
-						{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
-						data-textAlign="['inherit','inherit','center','center']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
-						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
-						letter-spacing: 5px; font-weight: 600; min-width: auto;">VIEW PROJECTS </div>
-				
-				</li>
-				
-				
-				<!-- SLIDE  4-->
-				<li data-index="rs-85" data-transition="fade" data-slotamount="default" data-hideafterloop="0" 
-					data-hideslideonmobile="off"  
-					data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="1000"  
-					data-rotate="0"  data-saveperformance="off"  
-					data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" 
-					data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" 
-					data-slicey_shadow="0px 0px 50px 0px transparent">
-					
-					<!-- MAIN IMAGE -->
-					<img src="images/slider-4-1920x1080.jpg"  alt=""  data-bgposition="center center" data-kenburns="on"
-						data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100" 
-						data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-						data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
-						data-no-retina>
-					
-					<!-- LAYERS -->
+    <script>
+        function playVideo(videoSrc) {
+            var videoPlayer = document.createElement('video');
+            videoPlayer.src = videoSrc;
+            videoPlayer.controls = true;
+            videoPlayer.autoplay = true;
+            videoPlayer.loop = false;
+            videoPlayer.style.width = '100%';
+            videoPlayer.style.height = 'auto';
+            
+            // Replace the image with the video player
+            var imageDiv = document.querySelector('.portfolio-item.second .');
+            imageDiv.innerHTML = '';
+            imageDiv.appendChild(videoPlayer);
+        }
+        </script>
+    <!-- Portfolio End -->
 
-					<!-- LAYER NR. 1 -->
-					<div class="tp-caption tp-resizeme"  
-						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-53','-53','-53','-33']" 
-						data-fontsize="['80','70','60','50']" data-lineheight="['90','80','70','60']"
-						data-width="none" data-height="none" data-whitespace="nowrap"
-			 
-						data-type="text" data-responsive_offset="on" 
 
-						data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <a class="text-white" href="#">Privacy</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Terms</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">FAQs</a>
+                <span class="px-3">|</span>
+                <a class="text-white" href="#">Help</a>
+            </div>
+            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-						style="z-index: 14; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 600; 
-						color: rgba(255,255,255,100); ">Red kayaks</div>
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-					<!-- LAYER NR. 2 -->
-					<div class="tp-caption tp-resizeme visit-btn" 
-						 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						 data-y="['middle','middle','middle','middle']" data-voffset="['25','25','25','25']" 
-						data-fontsize="['25','20','20','20']" data-lineheight="['30','25','25','25']"
-						data-width="['none','none','480','360']" data-height="none"
-						data-whitespace="['nowrap','nowrap','normal','normal']"
-			 
-						data-type="text" data-responsive_offset="on" 
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-						data-frames='[{"delay":400,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},
-							{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},
-							{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 100);bc:rgb(255,255,255);bw:0 0 0px 0;"}]'
-						data-textAlign="['inherit','inherit','center','center']"
-						data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
 
-						style="z-index: 15; white-space: nowrap; font-size: 25px; line-height: 30px; color: #fff; 
-						border-color:#fff; border-style:solid;border-width:0px 0px 3px 0px;cursor:pointer;
-						letter-spacing: 5px; font-weight: 600; min-width: auto;">VIEW PROJECTS </div>
-				
-				</li>
-			</ul>
-			<div class="tp-bannertimer" style="height: 10px; background: rgba(255,255,255,0.25);"></div>	</div>
-		</div><!-- END REVOLUTION SLIDER -->
-		
-	</section><!-- slider -->
-	
-	<footer>
-		<p class="copyright">
-			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp; distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-		</p>
-		
-		<a class="show-thumb-btn" href="#" style="margin-left: 220px;">SHOW THUMBNAILS</a>
-		
-		<ul class="social-icons">
-			<li><a href="#"><i class="ion-social-facebook-outline"></i></a></li>
-			<li><a href="#"><i class="ion-social-twitter-outline"></i></a></li>
-			<li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
-			<li><a href="#"><i class="ion-social-vimeo-outline"></i></a></li>
-			<li><a href="#"><i class="ion-social-pinterest-outline"></i></a></li>
-		</ul><!-- social-icons -->
-	</footer>
-	
-	
-	<!-- SCIPTS -->
-	
-	<script src="common-js/jquery-3.2.1.min.js"></script>
-	
-	<script src="common-js/tether.min.js"></script>
-	
-	<script src="common-js/bootstrap.js"></script>
-	
-	<!-- REVOLUTION JS FILES -->
-	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-		
-	
-	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->	
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
-	
-	
-	<script src="common-js/scripts.js"></script>
-	
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
